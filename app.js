@@ -21,4 +21,3 @@ backBtn.onclick = () => {
   personal.style.display = "none";
   account.style.display = "block";
 };
-
