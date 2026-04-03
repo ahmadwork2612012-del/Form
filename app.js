@@ -22,4 +22,3 @@ backBtn.onclick = () => {
   account.style.display = "block";
 };
 
-submitBtn.onclick = () => (window.location.href = "success.html");
