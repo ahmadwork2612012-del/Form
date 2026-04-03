@@ -3,7 +3,6 @@ const personal = document.querySelector(".personal");
 const nextBtn = document.getElementById("nextBtn");
 const backBtn = document.getElementById("backBtn");
 const submitBtn = document.getElementById("submitBtn");
-const submitBtn = document.getElementById("submitBtn");
 const successMsg = document.getElementById("successMsg");
 
 
