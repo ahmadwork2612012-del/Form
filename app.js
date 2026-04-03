@@ -3,6 +3,9 @@ const personal = document.querySelector(".personal");
 const nextBtn = document.getElementById("nextBtn");
 const backBtn = document.getElementById("backBtn");
 const submitBtn = document.getElementById("submitBtn");
+const submitBtn = document.getElementById("submitBtn");
+const successMsg = document.getElementById("successMsg");
+
 
 nextBtn.onclick = () => {
   const email = document.getElementById("email").value;
@@ -21,3 +24,17 @@ backBtn.onclick = () => {
   personal.style.display = "none";
   account.style.display = "block";
 };
+submitBtn.onclick = () => {
+  const email = document.getElementById("email").value;
+  const username = document.getElementById("username").value;
+  const phone = document.getElementById("phone").value;
+  const country = document.getElementById("country").value;
+
+  if (!email) return alert("Email is required");
+  if (!username) return alert("Username is required");
+  if (!phone) return alert("Phone is required");
+  if (!country) return alert("Country is required");
+
+  successMsg.textContent = "Form submitted successfully!";
+};
+
